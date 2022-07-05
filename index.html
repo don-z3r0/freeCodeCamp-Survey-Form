@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Development Platforms Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="heading">
+    <h1 id="title">Web Development Platforms Survey Form</h1>
+    <p id="description">Please fill the following survey to share your awereness of Web Development Platforms</p>
+    </div>
+    <div id="main">
+    <form id="survey-form">
+      <div id="input-fields">
+        <label id="name-label"><b>Name:</b></label>
+        <input id="name" type="name" name="name" class="form" required placeholder="Full Name"/><br>
+        <br>
+       <label id="email-label"><b>Email:</b></label>
+          <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"/><br>
+          <br>
+        <label id="number-label"><b>Age:</b> (optional)</label>
+         <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="13+"/><br>
+      </div>
+      <div id="dropdown-div"><br>
+        <label id="dropdown-label">Which one best describes your current role?</label>
+          <select id="dropdown" name="role" class="form">
+            <option value="0">(current role)</option>
+            <option value="role1">Student</option>
+            <option value="role2">Full-Time Empyoled</option>
+            <option value="role3">Part-Time Empyoled</option>
+            <option value="role4">Freelancer</option>
+            <option value="role5">Prefer not to say</option>
+          </select>
+      </div>
+      <br>
+      <div id="gender-div">
+        <label id="gender-label">Which gender do yo mostly identify with?</label><br>
+          <input type="radio" class="radio-inline" name="gender" value="male" checked> Male<br>
+          <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+          <input type="radio" class="radio-inline" name="gender" value="none"> Prefer not to say<br>
+      </div>
+      <br>
+      <div id="checkbox-div">
+        <label id="checkbox-label">Which of these have you heard/used of before?</label><br>
+          <input type="checkbox" value="Ruby" name="platform"> Ruby on Rails<br>
+          <input type="checkbox" value="Symfony" name="platform"> Symfony<br>
+          <input type="checkbox" value="Angular" name="platform"> Angular JS<br>
+          <input type="checkbox" value="WebFlow" name="platform"> WebFlow<br>
+          <input type="checkbox" value="React.js" name="platform"> React.js<br>
+      </div>
+
+      <div id="ending-div"><br><br>
+        <label id="textarea-label">Which other web development platform(s) do you know of?</label>
+        <textarea name="other" rows="4" cols="30" class="form" placeholder="Please tell us of more platforms you know of..."></textarea><br><br>
+        <input id="submit" type="submit" value="Submit">
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
